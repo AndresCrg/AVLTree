@@ -3,8 +3,10 @@ package models;
 public class Node {
 	
 	private int info;
+	private int height;
 	private Node left;
 	private Node right;
+	
 	
 	public Node(int info) {
 		this.info = info;
@@ -16,6 +18,14 @@ public class Node {
 
 	public void setInfo(int info) {
 		this.info = info;
+	}
+
+	public int getHeight() {
+		return height;
+	}
+
+	public void setHeight(int height) {
+		this.height = height;
 	}
 
 	public Node getLeft() {
@@ -36,6 +46,6 @@ public class Node {
 
 	@Override
 	public String toString() {
-		return "Node [info=" + info + "]";
+		return "Node [info=" + info + ", height=" + height + "]";
 	}
 }
